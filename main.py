@@ -1,7 +1,4 @@
 import math
-import uuid
-import copy
-import hashlib
 import json
 import copy
 
@@ -399,6 +396,7 @@ def test_compute_oc():
   state.compute_oc()
   state.print()
   print(f'OC Counter: {oc_counter}')
+  save_oc_dict()
 
 
 def test_n3_1():
@@ -431,9 +429,9 @@ def get_oc(uid):
   print(f"{uid} is {oc_dict[uid]}")
 
 if __name__ == "__main__":
-    #test_compute_oc()
+    test_compute_oc()
     #test_jojo()
-    get_oc('E-EEEE-EEEEEEEEE')
-    get_oc('E-EEEE-REEEEEEEE')
-    get_oc('E-EEEE-EREEEEEEE')
-    get_oc('E-EEEE-EEEEREEEE')
+    #get_oc('E-EEEE-EEEEEEEEE')
+    #get_oc('E-EEEE-REEEEEEEE')
+    #get_oc('E-EEEE-EREEEEEEE')
+    #get_oc('E-EEEE-EEEEREEEE')
