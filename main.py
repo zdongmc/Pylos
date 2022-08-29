@@ -427,6 +427,13 @@ def test_jojo():
   for child_state in child_states:
       child_state.print()
 
+def get_oc(uid):
+  print(f"{uid} is {oc_dict[uid]}")
 
 if __name__ == "__main__":
-    test()
+    #test_compute_oc()
+    #test_jojo()
+    get_oc('E-EEEE-EEEEEEEEE')
+    get_oc('E-EEEE-REEEEEEEE')
+    get_oc('E-EEEE-EREEEEEEE')
+    get_oc('E-EEEE-EEEEREEEE')
